@@ -1,8 +1,27 @@
 import "./reset.css";
-import React from "react";
+import React, { useRef, useState } from "react";
 import background from "./video/backgroundVideo.mp4";
+import Tiago from "./Components/Tiago Santos/index";
+import Bruno from "./Components/Bruno Costa/index";
+import Larissa from "./Components/Larissa Sousa/index";
+import Gabbe from "./Components/Gabbe Lins/index";
+import Gustavo from "./Components/Gustavo Pereira/index";
+import Igor from "./Components/Igor Santos/index";
+import Victor from "./Components/Victor Hugo/index";
+import Kayky from "./Components/Kayky Freitas/index";
+
 import { Main } from "./style";
-import Cards from "./Components/Cards/index";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+import "./styles.css";
+
+// import required modules
+import { Navigation } from "swiper";
 export default function App() {
   return (
     <>
@@ -13,8 +32,35 @@ export default function App() {
             <source src={background} type="video/mp4" />
           </video>
         </div>
+
         {/* Card */}
-        <Cards />
+
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+          <SwiperSlide>
+            <Bruno />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Tiago />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Larissa />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Gabbe />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Gustavo />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Igor />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Victor />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Kayky />
+          </SwiperSlide>
+        </Swiper>
       </Main>
     </>
   );
