@@ -40,12 +40,6 @@ export default function App() {
             <Bruno />
           </SwiperSlide>
           <SwiperSlide>
-            <Tiago />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Larissa />
-          </SwiperSlide>
-          <SwiperSlide>
             <Gabbe />
           </SwiperSlide>
           <SwiperSlide>
@@ -55,10 +49,16 @@ export default function App() {
             <Igor />
           </SwiperSlide>
           <SwiperSlide>
-            <Victor />
+            <Kayky />
           </SwiperSlide>
           <SwiperSlide>
-            <Kayky />
+            <Larissa />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Tiago />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Victor />
           </SwiperSlide>
         </Swiper>
       </Main>

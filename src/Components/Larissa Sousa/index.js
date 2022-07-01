@@ -34,6 +34,10 @@ export default function Larissa() {
                   <AiOutlineStar className="starIcon" />
                   <h3>Banco de dados </h3>
                 </span>
+                <span>
+                  <AiOutlineStar className="starIcon" />
+                  <h3>Designer </h3>
+                </span>
               </div>
               <div className="buttonSocialMedias">
                 <a

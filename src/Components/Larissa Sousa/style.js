@@ -97,6 +97,7 @@ export const Container = styled.div`
           display: flex;
           align-items: center;
           justify-content: start;
+          flex-direction: row;
           background: rgba(0, 19, 152, 0.07);
           mix-blend-mode: normal;
           border-radius: 5px;
@@ -141,6 +142,10 @@ export const Container = styled.div`
               color: #ffffff;
               mix-blend-mode: normal;
             }
+          }
+          .cardInfoStar {
+            flex-direction: row;
+            display: flex;
           }
         }
       }
