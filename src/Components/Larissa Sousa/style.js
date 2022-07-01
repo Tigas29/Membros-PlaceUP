@@ -1,4 +1,14 @@
 import styled from "styled-components";
+
+const Media = {
+  Laptop: "@media(max-width:1250px)",
+  Desktop: "@media(max-width:1440px)",
+  Tablet: "@media(max-width:994px)",
+  MobileL: "@media(max-width:425px)",
+};
+
+
+
 export const Container = styled.div`
   padding-top: 20px;
   width: 80%;
@@ -25,6 +35,10 @@ export const Container = styled.div`
         margin-left: 10px;
         width: 34px;
         height: 34px;
+        ${Media.MobileL}{
+          width: 24px;
+          height: 24px;
+        }
       }
 
       border: 1px solid #ffffff;
@@ -50,7 +64,6 @@ export const Container = styled.div`
     /* Background do card */
     .backgroundCard {
       width: 600px;
-      height: 800px;
       background: linear-gradient(
         146.69deg,
         transparent,
@@ -61,8 +74,8 @@ export const Container = styled.div`
       backdrop-filter: blur(13.5px);
       -webkit-backdrop-filter: blur(13.5px);
       border-radius: 10px;
-      border-radius: 20px;
-
+      border-radius: 20px; 
+      
       /* container das informacoes do cards */
       .containerInfoCards {
         display: flex;
@@ -80,7 +93,14 @@ export const Container = styled.div`
           font-weight: 600;
           font-size: 32px;
           color: #f5f5f5;
+          ${Media.MobileL}{
+            font-size: 22px;
+          }
+          ${Media.Tablet}{
+            font-size: 26px;
+          }
         }
+        
 
         /* onde a pessoa atuou no projeto */
         p {
@@ -90,6 +110,12 @@ export const Container = styled.div`
           font-size: 28px;
           line-height: 45px;
           color: #f5f5f5;
+          ${Media.MobileL}{
+            font-size: 16px;
+          }
+          ${Media.Tablet}{
+            font-size: 22px;
+          }
         }
         /* Caracteristas */
 
@@ -97,7 +123,6 @@ export const Container = styled.div`
           display: flex;
           align-items: center;
           justify-content: start;
-          flex-direction: row;
           background: rgba(0, 19, 152, 0.07);
           mix-blend-mode: normal;
           border-radius: 5px;
@@ -108,6 +133,14 @@ export const Container = styled.div`
             width: 24px;
             height: 24px;
             margin: 5px 10px;
+            ${Media.MobileL}{
+              width: 18px;
+              height:18px;
+            }
+            ${Media.Tablet}{
+              width: 20px;
+              height: 20px;
+            }
           }
 
           h3 {
@@ -116,6 +149,12 @@ export const Container = styled.div`
             font-size: 15px;
             color: #ffffff;
             margin-right: 10px;
+            ${Media.MobileL}{
+              font-size: 12px;
+            }
+            ${Media.Tablet}{
+              font-size: 13px;
+            }
           }
         }
         .buttonSocialMedias {
@@ -129,7 +168,7 @@ export const Container = styled.div`
             width: 100%;
           }
           button {
-            width: 100%;
+            width: 80%;
             border: 1px solid #ffffff;
             cursor: pointer;
 
@@ -143,13 +182,8 @@ export const Container = styled.div`
               mix-blend-mode: normal;
             }
           }
-          .cardInfoStar {
-            flex-direction: row;
-            display: flex;
-          }
         }
       }
-
       .optionNavigation {
         margin: auto;
         display: flex;

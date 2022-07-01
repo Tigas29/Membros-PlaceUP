@@ -39,11 +39,13 @@ body {
     -webkit-align-items: center;
     align-items: center;
 }
+.swiper-button-next, .swiper-button-prev{
+    width: calc(var(--swiper-navigation-size)/ 200 * 5);
+}
 
 .swiper-slide img {
     display: block;
-    width: 
-    80%;
+    width: 60%;
     height: 100%;
     object-fit: cover;
 }

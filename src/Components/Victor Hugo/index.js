@@ -27,7 +27,6 @@ export default function Victor() {
               <img src={victor} alt="Foto da perfil" />
               <h1>Victor Hugo</h1>
               <p>SCRUM MASTER BACK-END</p>
-
               {/* Container que ficam  logo apos a area de atuacao do mebro */}
               <div className="cardInfoStar">
                 <span>
