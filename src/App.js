@@ -1,6 +1,6 @@
 import "./reset.css";
 import React, { useRef, useState } from "react";
-import background from "./video/backgroundVideo.mp4";
+import background from "./video/wallpaper.png";
 import Tiago from "./Components/Tiago Santos/index";
 import Bruno from "./Components/Bruno Costa/index";
 import Larissa from "./Components/Larissa Sousa/index";
@@ -28,9 +28,7 @@ export default function App() {
       <Main>
         {/* background video */}
         <div>
-          <video className="VIDEO" autoPlay loop muted>
-            <source src={background} type="video/mp4" />
-          </video>
+          <img className="VIDEO" src={background} alty />
         </div>
 
         {/* Card */}
