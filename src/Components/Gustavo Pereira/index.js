@@ -50,6 +50,11 @@ export default function Gustavo() {
                     <h2>Git Hub</h2>
                   </button>
                 </a>
+ <a href="https://portifolio-xfirex157.vercel.app" target="blanked">
+                  <button>
+                    <h2>Portifolio</h2>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
